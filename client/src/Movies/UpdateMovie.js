@@ -30,9 +30,6 @@ export const UpdateMovie = props => {
   };
 
   const handleStars = (value, idx) => {
-    // idx comes from outer map on line #93 thats what will get passed into handleStars
-    // based on the index set star equal to e.target.value else star remains unchanged
-    // value === e.target.value from line #99
     const changedStar = movie.stars.map((star, i) =>
       i === idx ? value : star
     );
